@@ -34,7 +34,8 @@
             android:layout_marginStart="17dp"
             android:layout_marginLeft="17dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="0" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -43,7 +44,8 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="20dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="1" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -53,7 +55,8 @@
             android:layout_marginStart="12dp"
             android:layout_marginLeft="17dp"
             android:contentDescription="@string/todo"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="2" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -64,7 +67,8 @@
             android:layout_marginLeft="17dp"
             android:layout_marginTop="16dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="3" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -74,7 +78,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="16dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="4" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -85,7 +90,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="5" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -96,7 +102,8 @@
             android:layout_marginLeft="17dp"
             android:layout_marginTop="35dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="6" />
 
         <ImageView
             android:id="@+id/o"
@@ -106,7 +113,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="7" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -116,7 +124,47 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
             android:contentDescription="TODO"
-            android:onClick="dropIn" />
+            android:onClick="dropIn"
+            android:tag="8" />
 
     </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/winnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="playAgain"
+        android:text="RePlay"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/winnerTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
